@@ -1,54 +1,70 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class PanelElement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
+public class PanelElement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerDownHandler
 {
-    [SerializeField] private RectTransform _parent;
     [SerializeField] private RectTransform _rectTransform;
-    [SerializeField] private Canvas _canvas;
     [SerializeField] private Shadow _shadow;
 
-    private Vector3 off;
+    public event Action RightClickEvent;
+    
+    private Canvas _canvas;
+    private RectTransform _parent;
 
+    public void OnInstantiate(Canvas canvas, RectTransform parent)
+    {
+        _canvas = canvas;
+        _parent = parent;
+    }
+    
     public void OnBeginDrag(PointerEventData eventData)
     {
+        if (eventData.button == PointerEventData.InputButton.Right)
+        {
+            return;
+        }
+        
         _shadow.enabled = true;
         transform.SetAsLastSibling();
-        Vector3 position = _canvas.worldCamera.ScreenToWorldPoint(eventData.position);
-        position.z = _canvas.transform.position.z;
-        off = position - transform.position;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
+        if (eventData.button == PointerEventData.InputButton.Right)
+        {
+            return;
+        }
+        
         _rectTransform.anchoredPosition += eventData.delta / _canvas.scaleFactor;
         
-        if(_rectTransform.anchoredPosition.x < _parent.rect.x)
-        {
-            _rectTransform.anchoredPosition = new Vector2(-_parent.rect.x, _rectTransform.anchoredPosition.y);
-        }
+        Vector3[] fourCornersArray = new Vector3[4];
+        _parent.GetWorldCorners(fourCornersArray);
 
-        if (_rectTransform.anchoredPosition.y < _parent.rect.y)
-        {
-            _rectTransform.anchoredPosition = new Vector2(_rectTransform.anchoredPosition.x, -_parent.rect.y);
-        }
+        Vector3 pos = _rectTransform.position;
 
-        if (_rectTransform.anchoredPosition.x > _parent.rect.x + _parent.rect.width)
-        {
-            _rectTransform.anchoredPosition = new Vector2(_parent.rect.x, _rectTransform.anchoredPosition.y);
-        }
+        pos.x = Mathf.Clamp(pos.x, fourCornersArray[0].x, fourCornersArray[2].x);
+        pos.y = Mathf.Clamp(pos.y, fourCornersArray[0].y, fourCornersArray[2].y);
 
-        if (_rectTransform.anchoredPosition.y > _parent.rect.y + _parent.rect.height)
-        {
-            _rectTransform.anchoredPosition = new Vector2(_rectTransform.anchoredPosition.x, _parent.rect.y);
-        }
+        _rectTransform.position = pos;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        if (eventData.button == PointerEventData.InputButton.Right)
+        {
+            return;
+        }
+        
         _shadow.enabled = false;
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        if (eventData.button == PointerEventData.InputButton.Right)
+        {
+            RightClickEvent?.Invoke();
+        }
     }
 }
