@@ -23,7 +23,7 @@ namespace Code.Map
             GameObject newPin = Instantiate(_pinPrefab, position, _pinPrefab.transform.rotation, transform);
             Pin pinCreated = newPin.GetComponent<Pin>();
             _lastPinCreated = pinCreated.PanelElement;
-            _lastPinCreated.OnInstantiate(_canvas, GetComponent<RectTransform>());
+            _lastPinCreated.Configure(_canvas, GetComponent<RectTransform>());
             _map.AddPin(pinCreated);
         }
 

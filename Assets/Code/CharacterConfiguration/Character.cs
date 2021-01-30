@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Code.Files;
+using UnityEngine;
 
 namespace Code.CharacterConfiguration
 {
@@ -7,8 +8,11 @@ namespace Code.CharacterConfiguration
     {
         [SerializeField] private Color _color;
         [SerializeField] private Sprite _spriteShape;
+        [SerializeField] private Document[] _documents;
 
         public Color Color => _color;
         public Sprite SpriteShape => _spriteShape;
+
+        public Document[] Documents => _documents;
     }
 }

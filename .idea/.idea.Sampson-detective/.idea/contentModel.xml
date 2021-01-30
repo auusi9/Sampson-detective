@@ -11,6 +11,8 @@
             <e p="Character.cs" t="Include" />
           </e>
           <e p="Files" t="Include">
+            <e p="Document.cs" t="Include" />
+            <e p="Folder.cs" t="Include" />
             <e p="PanelElement.cs" t="Include" />
           </e>
           <e p="Folders" t="Include">

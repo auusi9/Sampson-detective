@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Desk
+    uniqueID: 2103022463
+    locked: 0
+  - name: Map
+    uniqueID: 4168646269
+    locked: 0
+  - name: Lines
+    uniqueID: 2142150861
+    locked: 0
+  - name: Pins
+    uniqueID: 1940376411
+    locked: 0
+  - name: Documents
+    uniqueID: 2636758889
+    locked: 0

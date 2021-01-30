@@ -13,7 +13,7 @@ public class PanelElement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEnd
     private Canvas _canvas;
     private RectTransform _parent;
 
-    public void OnInstantiate(Canvas canvas, RectTransform parent)
+    public void Configure(Canvas canvas, RectTransform parent)
     {
         _canvas = canvas;
         _parent = parent;

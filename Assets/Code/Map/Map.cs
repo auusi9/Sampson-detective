@@ -11,13 +11,14 @@ namespace Code.Map
     public class Map : MonoBehaviour
     {
         [SerializeField] private LineRenderer _lineRenderer;
+        [SerializeField] private Transform _linePoolParent;
         Dictionary<Character, List<Pin>> _pins = new Dictionary<Character, List<Pin>>();
 
         private ComponentPool<PinLine> _linePools;
 
         private void Start()
         {
-            _linePools = new ComponentPool<PinLine>(20, _lineRenderer.gameObject);
+            _linePools = new ComponentPool<PinLine>(3, _lineRenderer.gameObject, _linePoolParent);
         }
 
         private void Update()
@@ -41,8 +42,8 @@ namespace Code.Map
                 _pins.Add(MainFolder.Instance.SelectedCharacter, new List<Pin>());
             }
 
-
             _pins[MainFolder.Instance.SelectedCharacter].Add(pin);
+            pin.Configure(MainFolder.Instance.SelectedCharacter);
             pin.RightClickEvent += DestroyPin;
         }
 
@@ -95,6 +96,7 @@ namespace Code.Map
             if (pin.PinLine != null)
             {
                 _linePools.ReturnMono(pin.PinLine);
+                pin.PinLine = null;
             }
         }
     }
