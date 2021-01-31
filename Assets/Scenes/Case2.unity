@@ -847,6 +847,10 @@ PrefabInstance:
         get some stupid papers.\"\n\n\r\r<b>\xB7</b> \"I recall going to get some
         groceries at some point.\""
       objectReference: {fileID: 0}
+    - target: {fileID: 2085812475138585441, guid: 274f18762028d7743973e1af9d8b7393, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 543.03
+      objectReference: {fileID: 0}
     - target: {fileID: 2345055595558020848, guid: 274f18762028d7743973e1af9d8b7393, type: 3}
       propertyPath: m_SizeDelta.y
       value: 310.39
@@ -1046,7 +1050,8 @@ PrefabInstance:
         Orchard st., n\xBA 1\n<b>Motive:</b> the abductee, wearing a one meter tall
         hat, sat in front of Anna during the last 15 matches.\n\n<b>\r\r\r\r\xB7</b>
         \"I left the Hotel at 9:30. I got something quick for breakfast and went
-        to the football field as the match was about to start.\""
+        to the football field as the match was about to start. I watched the whole
+        match, it was so exciting!\""
       objectReference: {fileID: 0}
     - target: {fileID: 7070076093710669580, guid: 274f18762028d7743973e1af9d8b7393, type: 3}
       propertyPath: m_text
