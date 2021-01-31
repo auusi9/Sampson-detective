@@ -32,7 +32,7 @@ namespace Code.Utils
         {
             if (_counter >= _totalVisibleCharacters)
             {
-                gameObject.SetActive(false);
+                gameObject.transform.parent.gameObject.SetActive(false);
                 return;
             }
 

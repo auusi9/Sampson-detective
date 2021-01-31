@@ -9,6 +9,9 @@ namespace Code.Utils
     {
         [SerializeField] private int _scene;
         [SerializeField] private Button _button;
+        [SerializeField] private Image _folderIconButton02;
+        [SerializeField] private Image _folderIconReflButton02;
+        [SerializeField] private Color _colorDisable;
 
         private void Start()
         {
@@ -17,6 +20,8 @@ namespace Code.Utils
             if (PlayerPrefs.GetInt("LevelMax", 1) < _scene)
             {
                 _button.interactable = false;
+                _folderIconButton02.color = _colorDisable;
+                _folderIconReflButton02.color = _colorDisable;
             }
         }
 
