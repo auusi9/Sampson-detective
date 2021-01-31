@@ -157,6 +157,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7681680885982829450, guid: 2f8fc16cb4570a34a806dc7b6cfcd05c, type: 3}
+      propertyPath: m_Maskable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7681680885982829454, guid: 2f8fc16cb4570a34a806dc7b6cfcd05c, type: 3}
       propertyPath: m_Name
       value: PoliceEvidenceRoger
