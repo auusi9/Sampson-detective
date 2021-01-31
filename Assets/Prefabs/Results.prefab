@@ -2143,6 +2143,7 @@ MonoBehaviour:
   _foundImage: {fileID: 1606588040164373558}
   _correctText: {fileID: 9040007885916962526}
   _incorrectText: {fileID: 2512889608394855666}
+  _total: {fileID: 245088953053512921}
 --- !u!1 &8807963533328267575
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ namespace Code.FinalMenu
         [SerializeField] private Image _foundImage;
         [SerializeField] private TextMeshProUGUI _correctText;
         [SerializeField] private TextMeshProUGUI _incorrectText;
+        [SerializeField] private TextMeshProUGUI _total;
 
         public void Configure(Score score)
         {
@@ -22,7 +23,8 @@ namespace Code.FinalMenu
 
             _correctText.text = score.CorrectOnes.ToString();
             _incorrectText.text = score.IncorrectOnes.ToString();
-
+            _total.text = (score.IncorrectOnes + score.CorrectOnes).ToString();
+            
             if (perc > 0.8f)
             {
                 PlayerPrefs.SetInt("LevelMax", 2);
