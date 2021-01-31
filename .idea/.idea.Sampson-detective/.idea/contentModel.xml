@@ -19,6 +19,7 @@
             <e p="MainFolder.cs" t="Include" />
           </e>
           <e p="Map" t="Include">
+            <e p="DisableObjectOnClick.cs" t="Include" />
             <e p="Map.cs" t="Include" />
             <e p="Pin.cs" t="Include" />
             <e p="PinCreator.cs" t="Include" />

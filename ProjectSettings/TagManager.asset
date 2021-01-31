@@ -56,3 +56,6 @@ TagManager:
   - name: Documents
     uniqueID: 2636758889
     locked: 0
+  - name: UI
+    uniqueID: 3226024735
+    locked: 0
