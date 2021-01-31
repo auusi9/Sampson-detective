@@ -17,7 +17,7 @@ namespace Code.Files
             _documents = new Document[_character.Documents.Length];
             for (var i = 0; i < _character.Documents.Length; i++)
             {
-                _documents[i] = Instantiate(_character.Documents[i], transform.parent.position, _character.Documents[i].transform.rotation, _documentsParent);
+                _documents[i] = Instantiate(_character.Documents[i], _documentsParent.position + Vector3.one * Random.Range(-5f, 5f), _character.Documents[i].transform.rotation, _documentsParent);
                 _documents[i].Configure(_canvas, _documentsParent);
                 Deselected();
             }
@@ -37,19 +37,10 @@ namespace Code.Files
         public void Selected()
         {
             transform.parent.SetAsLastSibling();
-            
-            foreach (var document in _documents)
-            {
-                document.gameObject.SetActive(true);
-            }
         }
 
         public void Deselected()
         {
-            foreach (var document in _documents)
-            {
-                document.gameObject.SetActive(false);
-            }
         }
     }
 }
