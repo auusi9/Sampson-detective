@@ -26,16 +26,16 @@
         <option value="$PROJECT_DIR$/Assets/Code/Character/Character.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Map/PinLine.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Map/PinCreator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/CharacterConfiguration/Character.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Folders/MainFolder.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Files/PanelElement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Files/Folder.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Map/POI.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Map/PointsOfInterest/POI.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Map/Map.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Map/Pin.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Files/Document.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Map/DisableObjectOnClick.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Files/Document.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/CharacterConfiguration/Character.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Files/Folder.cs" />
       </list>
     </option>
   </component>
@@ -82,7 +82,7 @@
       <updated>1611952812284</updated>
       <workItem from="1611952816338" duration="2141000" />
       <workItem from="1611999638006" duration="23696000" />
-      <workItem from="1612084147457" duration="2081000" />
+      <workItem from="1612084147457" duration="4282000" />
     </task>
     <servers />
   </component>
