@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 951226bb512047eaad255d51ea4298d7, type: 3}
-  m_Name: VictorTrujillo
+  m_Name: LeoGarcia
   m_EditorClassIdentifier: 
   _color: {r: 0.95294124, g: 0.8313726, b: 0.14901961, a: 1}
   _spriteShape: {fileID: 21300000, guid: cb3443836fb93c54e960f3023bf94e9c, type: 3}
   _documents:
-  - {fileID: 803277226492350349, guid: 2f8fc16cb4570a34a806dc7b6cfcd05c, type: 3}
+  - {fileID: 4979252727524648465, guid: df4926aeeb15a7e45b5d2ffe8f2c5725, type: 3}
+  - {fileID: 4138938983791655476, guid: 05b001dae567007418e7733c725cfb94, type: 3}
+  _poiSolution: []

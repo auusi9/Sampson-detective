@@ -15,4 +15,6 @@ MonoBehaviour:
   _color: {r: 0.26666668, g: 0.38431376, b: 0.76470596, a: 1}
   _spriteShape: {fileID: 21300000, guid: 9d8136bca78c7e84481faa896b47d9d8, type: 3}
   _documents:
-  - {fileID: 803277226492350349, guid: 2f8fc16cb4570a34a806dc7b6cfcd05c, type: 3}
+  - {fileID: 6160101707381258754, guid: 4dee4f88a488f264290daf0f74157782, type: 3}
+  - {fileID: 472181053578345175, guid: 73aa9cd6116469c42b9bf0c4d209c9bf, type: 3}
+  _poiSolution: []
