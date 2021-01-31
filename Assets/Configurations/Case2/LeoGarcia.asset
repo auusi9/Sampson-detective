@@ -17,4 +17,8 @@ MonoBehaviour:
   _documents:
   - {fileID: 4979252727524648465, guid: df4926aeeb15a7e45b5d2ffe8f2c5725, type: 3}
   - {fileID: 4138938983791655476, guid: 05b001dae567007418e7733c725cfb94, type: 3}
-  _poiSolution: []
+  _poiSolution:
+  - home_leo
+  - school
+  - convenience_store
+  - pool

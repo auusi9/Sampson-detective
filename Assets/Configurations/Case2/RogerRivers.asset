@@ -17,4 +17,8 @@ MonoBehaviour:
   _documents:
   - {fileID: 4182904685014493467, guid: 3c6e0a55973b31a4f95239002c744d2d, type: 3}
   - {fileID: 7997673544690184579, guid: 2b9b9d140fe9b3947adbf3f73bc5487b, type: 3}
-  _poiSolution: []
+  _poiSolution:
+  - home_roger
+  - bakery
+  - police_station
+  - bar_graham

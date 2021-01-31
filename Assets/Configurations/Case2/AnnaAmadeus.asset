@@ -17,4 +17,7 @@ MonoBehaviour:
   _documents:
   - {fileID: 547027997732130440, guid: 1a8813dc341d0d141b656f1e9fef8c26, type: 3}
   - {fileID: 8511845029862432835, guid: a351a751babaf1347be29b2652e1bb50, type: 3}
-  _poiSolution: []
+  _poiSolution:
+  - hotel
+  - bar_graham
+  - football_field

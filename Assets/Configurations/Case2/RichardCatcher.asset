@@ -18,4 +18,10 @@ MonoBehaviour:
   - {fileID: 1747693166683888695, guid: b76703443065bcc4f9ec2071d7aaaeb6, type: 3}
   - {fileID: 1581603041575892978, guid: 8821ea489d560874f93a042d4398c8cf, type: 3}
   - {fileID: 1297798062111503941, guid: 1264a05a97e46d948a6756d2328605d3, type: 3}
-  _poiSolution: []
+  _poiSolution:
+  - home_richard
+  - bar_eastgate
+  - bus_station_eastgate
+  - bus_station_church
+  - town_hall
+  - convenience_store
