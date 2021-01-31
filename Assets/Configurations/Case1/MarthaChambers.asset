@@ -16,4 +16,4 @@ MonoBehaviour:
   _spriteShape: {fileID: 21300000, guid: c2c6a86a923c03b49a0514a6eab5af83, type: 3}
   _documents: []
   _poiSolution:
-  - house_martha
+  - home_martha

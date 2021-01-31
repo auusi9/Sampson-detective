@@ -38,6 +38,7 @@ namespace Code.Map
                 if (i > character.PoiSolution.Length - 1)
                 {
                     score.Value -= _badScore;
+                    score.IncorrectOnes++;
                     continue;
                 }
                 
