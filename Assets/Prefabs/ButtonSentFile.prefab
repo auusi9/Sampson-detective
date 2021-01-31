@@ -140,7 +140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SENT FILES
+  m_text: SEND FILES
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ca9b6e6a363829144a298b88a7432ed3, type: 2}
   m_sharedMaterial: {fileID: -7365588332266486782, guid: ca9b6e6a363829144a298b88a7432ed3, type: 2}
