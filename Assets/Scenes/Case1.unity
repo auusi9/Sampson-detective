@@ -919,6 +919,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5306727014000806470, guid: 888f59343f0d8c0409ea0d887e400f3b, type: 3}
+      propertyPath: m_text
+      value: 'Hey buddy, welcome to the team. I already have some work for you to
+        do.
+
+
+        We''ve received a report saying that their husband was missing.
+        We spoke with the suspects and now we need you to make our lifes easier.
+
+
+        I
+        need you to set the route our suspects followed this Saturday morning. I''ve
+        given you the files with each one of the suspects'' testimonies and all of
+        the evidence we''ve got.
+
+
+        If you click on one of the files and then
+        on the map, you''ll set a pushpin of that colour using the left mouse button.
+        You can take out any pin you want by using the right mouse button.
+
+
+        The
+        order in which they visited these locations is very important, so put the
+        pushpins accordingly. Send me the files whenever you''re done and I''ll check
+        them out. Good luck pal.'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 888f59343f0d8c0409ea0d887e400f3b, type: 3}
 --- !u!224 &1849582473 stripped
