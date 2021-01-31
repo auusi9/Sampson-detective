@@ -8,9 +8,9 @@ namespace Code.FinalMenu
 {
     public class FinalResultsMenu : MonoBehaviour
     {
-        [SerializeField] private Image[] _stars;
-        [SerializeField] private Color _colorWon;
-        [SerializeField] private Color _colorLost;
+        [SerializeField] private Image _fillImage;
+        [SerializeField] private Image _lostImage;
+        [SerializeField] private Image _foundImage;
         [SerializeField] private TextMeshProUGUI _correctText;
         [SerializeField] private TextMeshProUGUI _incorrectText;
 
@@ -18,24 +18,21 @@ namespace Code.FinalMenu
         {
             float perc = (float)score.Value / score.MaxValue;
 
-            for (var i = 0; i < _stars.Length; i++)
-            {
-                if (i < perc * _stars.Length)
-                {
-                    _stars[i].color = _colorWon;
-                }
-                else
-                {
-                    _stars[i].color = _colorLost;
-                }
-            }
+            _fillImage.fillAmount = perc;
 
             _correctText.text = score.CorrectOnes.ToString();
             _incorrectText.text = score.IncorrectOnes.ToString();
 
-            if (perc > 0.6f)
+            if (perc > 0.8f)
             {
                 PlayerPrefs.SetInt("LevelMax", 2);
+                _lostImage.gameObject.SetActive(false);
+                _foundImage.gameObject.SetActive(true);
+            }
+            else
+            {
+                _lostImage.gameObject.SetActive(true);
+                _foundImage.gameObject.SetActive(false);
             }
         }
 

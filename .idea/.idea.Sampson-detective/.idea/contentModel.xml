@@ -35,6 +35,7 @@
           <e p="Utils" t="Include">
             <e p="ComponentPool.cs" t="Include" />
             <e p="DottedLineRenderer.cs" t="Include" />
+            <e p="Music.cs" t="Include" />
             <e p="OpenSceneButton.cs" t="Include" />
             <e p="TutorialText.cs" t="Include" />
           </e>
