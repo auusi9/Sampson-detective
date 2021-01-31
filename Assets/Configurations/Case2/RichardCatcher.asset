@@ -18,6 +18,7 @@ MonoBehaviour:
   - {fileID: 1747693166683888695, guid: b76703443065bcc4f9ec2071d7aaaeb6, type: 3}
   - {fileID: 1581603041575892978, guid: 8821ea489d560874f93a042d4398c8cf, type: 3}
   - {fileID: 1297798062111503941, guid: 1264a05a97e46d948a6756d2328605d3, type: 3}
+  - {fileID: 8102038149859170245, guid: 8ee1b3cb7124f7342a0ce9d5c3d25d03, type: 3}
   _poiSolution:
   - home_richard
   - bar_eastgate
