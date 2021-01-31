@@ -36,8 +36,8 @@
         <option value="$PROJECT_DIR$/Assets/Code/CharacterConfiguration/Character.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Folders/MainFolder.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Map/Map.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Map/Result.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Files/Folder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Map/Result.cs" />
       </list>
     </option>
   </component>
@@ -85,7 +85,7 @@
       <updated>1611952812284</updated>
       <workItem from="1611952816338" duration="2141000" />
       <workItem from="1611999638006" duration="23696000" />
-      <workItem from="1612084147457" duration="10057000" />
+      <workItem from="1612084147457" duration="10824000" />
     </task>
     <servers />
   </component>
