@@ -17,4 +17,8 @@ MonoBehaviour:
   _documents:
   - {fileID: 6160101707381258754, guid: 4dee4f88a488f264290daf0f74157782, type: 3}
   - {fileID: 472181053578345175, guid: 73aa9cd6116469c42b9bf0c4d209c9bf, type: 3}
-  _poiSolution: []
+  _poiSolution:
+  - home_tony
+  - park_bakery
+  - bar_graham
+  - restaurant_bankside

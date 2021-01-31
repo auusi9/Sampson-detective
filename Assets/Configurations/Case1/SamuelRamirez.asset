@@ -16,4 +16,7 @@ MonoBehaviour:
   _spriteShape: {fileID: 21300000, guid: 2a0fb9bf20cdf1140b45fbe105ebff23, type: 3}
   _documents:
   - {fileID: 2881620739725251638, guid: bbaee26ce53da24449f0a293633e1dc3, type: 3}
-  _poiSolution: []
+  _poiSolution:
+  - home_samuel
+  - bakery
+  - restaurant_lime
