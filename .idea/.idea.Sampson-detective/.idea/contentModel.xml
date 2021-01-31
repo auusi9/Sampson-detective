@@ -36,6 +36,7 @@
             <e p="ComponentPool.cs" t="Include" />
             <e p="DottedLineRenderer.cs" t="Include" />
             <e p="OpenSceneButton.cs" t="Include" />
+            <e p="TutorialText.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">
