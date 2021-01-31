@@ -120,3 +120,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panelElement: {fileID: 7681680885982829448}
+  _targetId: town_hall
