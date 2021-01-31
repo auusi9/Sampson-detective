@@ -1,12 +1,14 @@
 ﻿using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Code.Utils
 {
     public class TutorialText : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI _textMeshPro;
+        [SerializeField] private Button _button;
         [SerializeField] private float _timeBetweenLetters = 0.2f;
 
         private float _time;
@@ -15,9 +17,27 @@ namespace Code.Utils
 
         private void Start()
         {
+            _button.onClick.AddListener(FastForward);
             _textMeshPro.ForceMeshUpdate();
             _totalVisibleCharacters = _textMeshPro.textInfo.characterCount;
             _textMeshPro.maxVisibleCharacters = 0;
+        }
+
+        private void OnDestroy()
+        {
+            _button.onClick.RemoveListener(FastForward);
+        }
+
+        private void FastForward()
+        {
+            if (_counter >= _totalVisibleCharacters)
+            {
+                gameObject.SetActive(false);
+                return;
+            }
+
+            _textMeshPro.maxVisibleCharacters = _totalVisibleCharacters;
+            _counter = _totalVisibleCharacters;
         }
 
         private void Update()
