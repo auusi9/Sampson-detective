@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Code.CharacterConfiguration;
+using Code.FinalMenu;
 using Code.Folders;
 using Code.Map.PointsOfInterest;
 using UnityEngine;
@@ -10,6 +11,7 @@ namespace Code.Map
     public class Result : MonoBehaviour
     {
         [SerializeField] private Map _map;
+        [SerializeField] private FinalResultsMenu _finalResultsMenu;
         [SerializeField] private POI[] _pois;
         [SerializeField] private float _distanceThreshold;
         [SerializeField] private int _goodScore;
@@ -24,6 +26,11 @@ namespace Code.Map
             {
                 score += CalculateCharacterScore(character);
             }
+
+            FinalResultsMenu menu = Instantiate(_finalResultsMenu, _finalResultsMenu.transform.position,
+                _finalResultsMenu.transform.rotation);
+            
+            menu.Configure(score);
             
             Debug.Log("Score " + score.Value + " Correct ones: " + score.CorrectOnes + " Incorrect ones: " + score.IncorrectOnes);
         }
@@ -69,6 +76,7 @@ namespace Code.Map
                 score.Value -= _badScore * diff;
             }
 
+            score.MaxValue = _goodScore * character.PoiSolution.Length;
             return score;
         }
     }
@@ -76,12 +84,14 @@ namespace Code.Map
     public struct Score
     {
         public int Value;
+        public int MaxValue;
         public int CorrectOnes;
         public int IncorrectOnes;
 
         public static Score operator +(Score a, Score b)
         {
             a.Value += b.Value;
+            a.MaxValue += b.MaxValue;
             a.CorrectOnes += b.CorrectOnes;
             a.IncorrectOnes += b.IncorrectOnes;
 
