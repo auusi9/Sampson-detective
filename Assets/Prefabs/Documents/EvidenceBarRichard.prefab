@@ -7,6 +7,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1421845974638725828, guid: 4dee4f88a488f264290daf0f74157782, type: 3}
+      propertyPath: m_text
+      value: 'EASTGATE
+
+        CAFE'
+      objectReference: {fileID: 0}
     - target: {fileID: 3111103671776321713, guid: 4dee4f88a488f264290daf0f74157782, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 57

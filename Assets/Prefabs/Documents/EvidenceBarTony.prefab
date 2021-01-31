@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 1358610030629695501}
   - component: {fileID: 1421845974638725828}
   m_Layer: 0
-  m_Name: EastgateCafe
+  m_Name: GrahamCafe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'EASTGATE
+  m_text: 'GRAHAM
 
     CAFE'
   m_isRightToLeft: 0
