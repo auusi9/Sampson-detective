@@ -23,8 +23,10 @@ namespace Code.Map
 
         private void Update()
         {
+            List<Pin> allPins = new List<Pin>();
             foreach (KeyValuePair<Character, List<Pin>> pinList in _pins)
             {
+                allPins.AddRange(pinList.Value);
                 if (pinList.Value.Count > 1)
                 {
                     for (int i = 1; i < pinList.Value.Count; i++)
@@ -32,6 +34,14 @@ namespace Code.Map
                         SetLineRendererPositions(pinList, i);
                     }
                 }
+            }
+            
+            allPins.Sort((x, y) => y.transform.position.y.CompareTo(x.transform.position.y));
+
+            for (var i = 0; i < allPins.Count; i++)
+            {
+                var pin = allPins[i];
+                pin.transform.SetSiblingIndex(i);
             }
         }
 
@@ -54,8 +64,8 @@ namespace Code.Map
 
             pinLine.Configure(pinList.Key.Color, new[]
             {
-                pinList.Value[i - 1].transform.position,
-                pinList.Value[i].transform.position
+                pinList.Value[i - 1].LineOrigin.position,
+                pinList.Value[i].LineOrigin.position
             });
         }
 

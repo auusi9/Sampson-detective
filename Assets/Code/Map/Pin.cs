@@ -10,7 +10,10 @@ namespace Code.Map
         [SerializeField] private PanelElement _panelElement;
         [SerializeField] private Image _background;
         [SerializeField] private Image _shape;
+        [SerializeField] private Transform _lineOrigin;
         public event Action<Pin> RightClickEvent;
+
+        public Transform LineOrigin => _lineOrigin;
 
         public PanelElement PanelElement => _panelElement;
         public PinLine PinLine;
@@ -27,7 +30,7 @@ namespace Code.Map
 
         public void Configure(Character character)
         {
-            _background.color = character.Color;
+            //_background.color = character.Color;
             _shape.sprite = character.SpriteShape;
         }
 

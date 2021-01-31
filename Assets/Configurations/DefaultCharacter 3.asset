@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DefaultCharacter 3
   m_EditorClassIdentifier: 
   _color: {r: 0.95294124, g: 0.8313726, b: 0.14901961, a: 1}
-  _spriteShape: {fileID: 3625043607559282579, guid: 88ec71f512f89b44f8e1bd0fd77b98a9, type: 3}
+  _spriteShape: {fileID: 21300000, guid: cb3443836fb93c54e960f3023bf94e9c, type: 3}
   _documents:
   - {fileID: 803277226492350349, guid: 2f8fc16cb4570a34a806dc7b6cfcd05c, type: 3}
