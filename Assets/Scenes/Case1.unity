@@ -1258,6 +1258,16 @@ PrefabInstance:
       propertyPath: _documentsParent
       value: 
       objectReference: {fileID: 1555179175}
+    - target: {fileID: 5595443625908718685, guid: 274f18762028d7743973e1af9d8b7393, type: 3}
+      propertyPath: m_text
+      value: "<b>Name:</b> Victor Trujillo\n<b>Age:</b> 27\n\r<b>Job:</b> QA Lead\n<b>Address:</b>
+        Eastgate St., n\xBA 42\n<b>Motive:</b> the abductee called Victor \"weak\"
+        in several occasions\n\n<b>\r\r\r\r\xB7</b> \"Woke up pretty early. Had to
+        go pump some iron at the gym, you seen these guns? Left my home at 8:55,
+        got there at nine o'clock. Always on time.\"\n\n<b>\r\r\r\r\xB7</b> \"After
+        three hours of high intensity workout, just how I like it, I decided to go
+        grab a bite.\""
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 274f18762028d7743973e1af9d8b7393, type: 3}
 --- !u!1001 &5662188983325938429
