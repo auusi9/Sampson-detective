@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,7 +7,7 @@ namespace Code.Map
 {
     public class DisableObjectOnClick : MonoBehaviour
     {
-        [SerializeField] private GameObject _targetGameObject;
+        [SerializeField] private GameObject[] _targetGameObject;
         [SerializeField] private Button _button;
 
         private void Start()
@@ -16,7 +17,10 @@ namespace Code.Map
 
         private void ToggleGameobject()
         {
-            _targetGameObject.gameObject.SetActive(!_targetGameObject.activeSelf);
+            foreach (var go in _targetGameObject)
+            {
+                go.SetActive(!go.activeSelf);
+            }
         }
         
         private void OnDestroy()
