@@ -25,6 +25,8 @@ namespace Code.Folders
             }
         }
 
+        public Character[] Characters => _characters;
+
         public static MainFolder Instance;
 
         private int _selectedChar;

@@ -109,5 +109,15 @@ namespace Code.Map
                 pin.PinLine = null;
             }
         }
+
+        public List<Pin> GetCharacterPins(Character character)
+        {
+            if (!_pins.ContainsKey(character))
+            {
+                _pins.Add(character, new List<Pin>());
+            }
+
+            return _pins[character];
+        }
     }
 }

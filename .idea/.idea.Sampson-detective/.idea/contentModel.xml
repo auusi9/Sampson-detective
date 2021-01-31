@@ -27,6 +27,7 @@
             <e p="PointsOfInterest" t="Include">
               <e p="POI.cs" t="Include" />
             </e>
+            <e p="Result.cs" t="Include" />
           </e>
           <e p="Utils" t="Include">
             <e p="ComponentPool.cs" t="Include" />
