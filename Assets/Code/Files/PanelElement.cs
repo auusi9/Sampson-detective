@@ -3,10 +3,11 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class PanelElement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerDownHandler
+public class PanelElement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerDownHandler, IPointerUpHandler
 {
     [SerializeField] private RectTransform _rectTransform;
     [SerializeField] private Shadow _shadow;
+    [SerializeField] private float _scale = 1.0f;
 
     public event Action RightClickEvent;
     
@@ -21,13 +22,7 @@ public class PanelElement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEnd
     
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (eventData.button == PointerEventData.InputButton.Right)
-        {
-            return;
-        }
-        
-        _shadow.enabled = true;
-        transform.SetAsLastSibling();
+        OnDrag(eventData);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -65,6 +60,17 @@ public class PanelElement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEnd
         if (eventData.button == PointerEventData.InputButton.Right)
         {
             RightClickEvent?.Invoke();
+            return;
         }
+        
+        transform.localScale = new Vector3(_scale, _scale, 1.0f);
+        _shadow.enabled = true;
+        transform.SetAsLastSibling();
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+        _shadow.enabled = false;
     }
 }

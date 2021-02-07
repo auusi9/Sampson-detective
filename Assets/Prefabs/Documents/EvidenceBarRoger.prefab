@@ -13,6 +13,10 @@ PrefabInstance:
 
         CAFE'
       objectReference: {fileID: 0}
+    - target: {fileID: 2126703933373438573, guid: 4dee4f88a488f264290daf0f74157782, type: 3}
+      propertyPath: m_text
+      value: 11:00
+      objectReference: {fileID: 0}
     - target: {fileID: 3801622669932785152, guid: 4dee4f88a488f264290daf0f74157782, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -103,7 +107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4413911277972528389, guid: 4dee4f88a488f264290daf0f74157782, type: 3}
       propertyPath: m_text
-      value: 'Time:          11:00'
+      value: 'Time:'
       objectReference: {fileID: 0}
     - target: {fileID: 6907840964954592800, guid: 4dee4f88a488f264290daf0f74157782, type: 3}
       propertyPath: m_text

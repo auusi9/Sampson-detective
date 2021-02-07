@@ -7,15 +7,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 911844757101549287, guid: 4dee4f88a488f264290daf0f74157782, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -14.7167
+      objectReference: {fileID: 0}
+    - target: {fileID: 911844757101549287, guid: 4dee4f88a488f264290daf0f74157782, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -13.606
+      objectReference: {fileID: 0}
+    - target: {fileID: 911844757101549287, guid: 4dee4f88a488f264290daf0f74157782, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -4.5816
+      objectReference: {fileID: 0}
+    - target: {fileID: 911844757101549287, guid: 4dee4f88a488f264290daf0f74157782, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 4.8593
+      objectReference: {fileID: 0}
     - target: {fileID: 1421845974638725828, guid: 4dee4f88a488f264290daf0f74157782, type: 3}
       propertyPath: m_text
       value: 'GRAHAM
 
         CAFE'
       objectReference: {fileID: 0}
-    - target: {fileID: 3111103671776321713, guid: 4dee4f88a488f264290daf0f74157782, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 57
+    - target: {fileID: 2126703933373438573, guid: 4dee4f88a488f264290daf0f74157782, type: 3}
+      propertyPath: m_text
+      value: 10:00
       objectReference: {fileID: 0}
     - target: {fileID: 3801622669932785152, guid: 4dee4f88a488f264290daf0f74157782, type: 3}
       propertyPath: m_Pivot.x
@@ -107,7 +123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4413911277972528389, guid: 4dee4f88a488f264290daf0f74157782, type: 3}
       propertyPath: m_text
-      value: 'Time:          10:00'
+      value: Time
       objectReference: {fileID: 0}
     - target: {fileID: 6907840964954592800, guid: 4dee4f88a488f264290daf0f74157782, type: 3}
       propertyPath: m_text

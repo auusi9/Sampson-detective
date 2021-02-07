@@ -11,16 +11,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/30176638-336D-4EAA-A774-44CDCFDCD3C7/0c/df09de1d/IEventSystemHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Documents/Sampson-detective/Assets/Code/Utils/TutorialText.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E414E10B-FE5F-4572-9FF1-22F3359DE21B/9a/bba3e66c/RectTransform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.common@4.0.3/Editor/InternalBridge/TexturePlatformSettings/TexturePlatformSettings.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Cubical Puzzle/Assets/Scripts/LoreScripts/LoreMessageUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/30176638-336D-4EAA-A774-44CDCFDCD3C7/d1/65778c9e/0200005A.il" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/30176638-336D-4EAA-A774-44CDCFDCD3C7/12/a81e3187/IDragHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@1.3.9/Editor/Models/Providers/Collab.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E414E10B-FE5F-4572-9FF1-22F3359DE21B/d8/7e0f059a/LineRenderer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/82EC470C-9131-4935-8AD0-C83AD628910C/e8/0ba20f8d/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.common@4.0.3/Editor/InternalBridge/TexturePlatformSettings/TexturePlatformSettings.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -31,7 +23,6 @@
         <option value="$PROJECT_DIR$/Assets/Code/Character/Character.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Map/PinLine.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Map/PinCreator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Files/PanelElement.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Map/POI.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Map/PointsOfInterest/POI.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Map/Pin.cs" />
@@ -45,6 +36,7 @@
         <option value="$PROJECT_DIR$/Assets/Code/Map/Result.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Utils/TutorialText.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/FinalMenu/FinalResultsMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Files/PanelElement.cs" />
       </list>
     </option>
   </component>
@@ -61,6 +53,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.build.unityPlugin" />
     <property name="threadsIsVisibleKey" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -94,6 +87,8 @@
       <workItem from="1611999638006" duration="23696000" />
       <workItem from="1612084147457" duration="13250000" />
       <workItem from="1612111739535" duration="3732000" />
+      <workItem from="1612382259107" duration="746000" />
+      <workItem from="1612691264011" duration="1772000" />
     </task>
     <servers />
   </component>
@@ -219,53 +214,25 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Code/Map/Map.cs</url>
           <line>107</line>
-          <properties documentPath="D:\Documents\Sampson-detective\Assets\Code\Map\Map.cs" initialLine="97">
-            <startOffsets>
-              <option value="3315" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3350" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="D:\Documents\Sampson-detective\Assets\Code\Map\Map.cs" initialLine="97" />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Code/Utils/TutorialText.cs</url>
           <line>17</line>
-          <properties documentPath="D:\Documents\Sampson-detective\Assets\Code\Utils\TutorialText.cs" initialLine="17">
-            <startOffsets>
-              <option value="417" />
-            </startOffsets>
-            <endOffsets>
-              <option value="448" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="D:\Documents\Sampson-detective\Assets\Code\Utils\TutorialText.cs" initialLine="17" />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Code/Utils/TutorialText.cs</url>
           <line>18</line>
-          <properties documentPath="D:\Documents\Sampson-detective\Assets\Code\Utils\TutorialText.cs" initialLine="18">
-            <startOffsets>
-              <option value="461" />
-            </startOffsets>
-            <endOffsets>
-              <option value="524" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="D:\Documents\Sampson-detective\Assets\Code\Utils\TutorialText.cs" initialLine="18" />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Code/Utils/TutorialText.cs</url>
           <line>19</line>
-          <properties documentPath="D:\Documents\Sampson-detective\Assets\Code\Utils\TutorialText.cs" initialLine="19">
-            <startOffsets>
-              <option value="537" />
-            </startOffsets>
-            <endOffsets>
-              <option value="575" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="D:\Documents\Sampson-detective\Assets\Code\Utils\TutorialText.cs" initialLine="19" />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
