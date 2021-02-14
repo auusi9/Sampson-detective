@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 namespace Code.Map
 {
-    public class PinCreator : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerDownHandler
+    public class PinCreator : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerDownHandler, IPointerUpHandler
     {
         [SerializeField] private GameObject _pinPrefab;
         [SerializeField] private Canvas _canvas;
@@ -25,6 +25,7 @@ namespace Code.Map
             _lastPinCreated = pinCreated.PanelElement;
             _lastPinCreated.Configure(_canvas, GetComponent<RectTransform>());
             _map.AddPin(pinCreated);
+            _lastPinCreated.OnPointerDown(eventData);
         }
 
         public void OnDrag(PointerEventData eventData)
@@ -55,6 +56,16 @@ namespace Code.Map
             }
             
             _lastPinCreated?.OnEndDrag(eventData);
+        }
+
+        public void OnPointerUp(PointerEventData eventData)
+        {
+            if (eventData.button == PointerEventData.InputButton.Right)
+            {
+                return;
+            }
+            
+            _lastPinCreated?.OnPointerUp(eventData);
             _lastPinCreated = null;
         }
     }

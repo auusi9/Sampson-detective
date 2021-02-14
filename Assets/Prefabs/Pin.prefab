@@ -95,6 +95,7 @@ MonoBehaviour:
   _rectTransform: {fileID: 416993596002120527}
   _shadow: {fileID: 6104523559631886552}
   _scale: 1.2
+  _pointerHandler: {fileID: 11400000, guid: 0f83e776a913a814ca3ce30181e39872, type: 2}
 --- !u!114 &3270786448821808862
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,9 +1,10 @@
 ﻿using System;
+using Code.Pointer;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class PanelElement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerDownHandler, IPointerUpHandler
+public class PanelElement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private RectTransform _rectTransform;
     [SerializeField] private Shadow _shadow;
@@ -60,17 +61,30 @@ public class PanelElement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEnd
         if (eventData.button == PointerEventData.InputButton.Right)
         {
             RightClickEvent?.Invoke();
+            PointerHandler.Instance.PanelStoppedHovering(GetHashCode());
             return;
         }
         
         transform.localScale = new Vector3(_scale, _scale, 1.0f);
         _shadow.enabled = true;
         transform.SetAsLastSibling();
+        PointerHandler.Instance.PanelClicked(GetHashCode());
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
         transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
         _shadow.enabled = false;
+        PointerHandler.Instance.PanelReleased(GetHashCode());
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        PointerHandler.Instance.PanelHovered(GetHashCode());
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        PointerHandler.Instance.PanelStoppedHovering(GetHashCode());
     }
 }

@@ -11,6 +11,7 @@ namespace Code.Files
         [SerializeField] private Canvas _canvas;
         private Document[] _documents;
         private Character _character;
+        
         public void Configure(Character character)
         {
             _character = character;
