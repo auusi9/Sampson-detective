@@ -15,6 +15,7 @@ namespace Code.Pointer
         private List<int> _panelsClicked = new List<int>();
 
         private bool _isClicked;
+        private Vector2 _cursorHotspot = new Vector2(25, 27);
 
         public static PointerHandler Instance;
 
@@ -69,33 +70,35 @@ namespace Code.Pointer
             }
             else
             {
-                _isClicked = false;
+                if (_isClicked == true)
+                {
+                    _isClicked = false;
+                    SetPointerImage();
+                }
             }
-
-            SetPointerImage();
         }
 
         private void SetPointerImage()
         {
             if (_panelsClicked.Count > 0)
             {
-                Cursor.SetCursor(_cursorClickedPanel, Vector2.zero, CursorMode.Auto);
+                Cursor.SetCursor(_cursorClickedPanel, _cursorHotspot, CursorMode.Auto);
                 return;
             }
 
             if (_panelsHovered.Count > 0)
             {
-                Cursor.SetCursor(_cursorHovered, Vector2.zero, CursorMode.Auto);
+                Cursor.SetCursor(_cursorHovered, _cursorHotspot, CursorMode.Auto);
                 return;
             }
 
             if (_isClicked)
             {
-                Cursor.SetCursor(_cursorClicked, Vector2.zero, CursorMode.Auto);
+                Cursor.SetCursor(_cursorClicked, _cursorHotspot, CursorMode.Auto);
                 return;
             }
             
-            Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+            Cursor.SetCursor(null, _cursorHotspot, CursorMode.Auto);
         }
     }
 }
