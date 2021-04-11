@@ -46,3 +46,4 @@ MonoBehaviour:
   _cursorHovered: {fileID: 2800000, guid: d010389fb243c684b94a64f012c4e4dc, type: 3}
   _cursorClickedPanel: {fileID: 2800000, guid: c36c6adb296fcd04aabf3bf4dd3b3d09, type: 3}
   _cursorClicked: {fileID: 2800000, guid: 449a342f353ab0942ac5035393227dc2, type: 3}
+  _defaultCursor: {fileID: 2800000, guid: e575888f6aa91b243b6dd96f2e65103e, type: 3}

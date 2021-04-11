@@ -10,6 +10,7 @@ namespace Code.Pointer
         [SerializeField] private Texture2D _cursorHovered;
         [SerializeField] private Texture2D _cursorClickedPanel;
         [SerializeField] private Texture2D _cursorClicked;
+        [SerializeField] private Texture2D _defaultCursor;
         
         private List<int> _panelsHovered = new List<int>();
         private List<int> _panelsClicked = new List<int>();
@@ -98,7 +99,7 @@ namespace Code.Pointer
                 return;
             }
             
-            Cursor.SetCursor(null, _cursorHotspot, CursorMode.Auto);
+            Cursor.SetCursor(_defaultCursor, _cursorHotspot, CursorMode.Auto);
         }
     }
 }
